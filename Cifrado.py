@@ -4,33 +4,33 @@ class CifradoCesar:
         self.nombre = nombre
         self.cifrando = False
 
-    def iniciar_cifrado(self):
+    def iniciar_presentacion(self):
         self.cifrando = True
-        print(f"\n¡Bienvenido al cifrador, {self.nombre}!")
+        print(f"¡Bienvenido al cifrador, {self.nombre}!")
         print("El cifrado ha comenzado..")
         print("Introduce el texto que deseas cifrar.")
         
-        texto = input("texto: ")
+        texto = input("Texto: ")
         if texto == texto.upper():
             abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         else:
             abc = "abcdefghijklmnopqrstuvwxyz"
             
-            k = int(input("Valor de desplazamiento (k):"))
-            cifrado = ""
+            k = int(input("Valor de desplazamiento: "))
+            acifrar = ""
             
             for letra in texto:
                 if letra in abc:
-                    cifrado += abc[abc.index(letra) + k%(len(abc))]
+                    acifrar += abc[abc.index(letra) + k%(len(abc))]
                 else:
-                    cifrado += letra
+                    acifrar += letra
                     
-                    print("texto cifrado: ", cifrado)
+                    print("texto cifrado: ", acifrar)
 
-        print("¡Gracias por cifrar!\n")
+        print("¡Gracias por cifrar!")
 
     def salir(self):
-        print(f"\nHasta luego, {self.nombre}. ¡Vuelve pronto!")
+        print(f"Hasta luego, {self.nombre}. ¡Vuelve pronto!")
 
 
   
