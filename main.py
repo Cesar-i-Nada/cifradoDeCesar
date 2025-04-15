@@ -1,4 +1,4 @@
-from Juego import Juego
+from Cifrado import CifradoCesar
 
 def mostrar_menu():
     print("=== MENÚ PRINCIPAL ===")
@@ -7,8 +7,8 @@ def mostrar_menu():
     print("======================")
 
 def main():
-    nombre = input("Ingresa tu nombre para comenzar: ")
-    juego = Juego(nombre)
+    nombre = input("Ingresa un texto para cifrarlo: ")
+    juego = CifradoCesar(nombre)
     valor=True
     while valor:
         mostrar_menu()
