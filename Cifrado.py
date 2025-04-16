@@ -1,4 +1,17 @@
 TAM_MAX_CLAVE = 26
+
+class CifradoCesar:
+    def __init__(self, nombre_persona):
+        
+        self.nombre_persona = nombre
+        self.cifrando = False 
+        
+def iniciar_cifrado(self):
+    self.cifrando = True
+    print(f"\n¡Bienvenido al cifrado César, {self.nombre_persona}!")
+    print("El cifrado ha comenzado..")
+    print("Aqui está el cifrador de palabras.")
+
 def obtenerModo():
     while True:
         print('¿Deseas encriptar o desencriptar un mensaje?')
@@ -51,3 +64,6 @@ clave = obtenerClave()
 
 print('Tu texto traducido es:')
 print(obtenerMensajeTraducido(modo, mensaje, clave))
+
+def salir(self):
+        print(f"\nHasta luego, {self.nombre_persona}. ¡Vuelve pronto!")

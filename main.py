@@ -1,25 +1,25 @@
-from Cifrado import CifradoCesar
+from Juego import Juego
 
 def mostrar_menu():
-    print("=== MENÚ PRINCIPAL DEL CIFRADOR ===")
-    print("I. Iniciar cifrado")
-    print("X. Salir")
+    print("=== MENÚ PRINCIPAL ===")
+    print("1. Iniciar juego")
+    print("2. Salir")
     print("======================")
 
 def main():
-    nombre = input("Ingresa tu nombre y accede al menú principal: ")
-    acifrar = CifradoCesar(nombre)
+    nombre = input("Ingresa tu nombre para comenzar: ")
+    juego = Juego(nombre)
     valor=True
     while valor:
         mostrar_menu()
         opcion = input("Selecciona una opción: ")
 
-        if opcion == "I":
-            acifrar.iniciar_presentacion()
-        elif opcion == "X":
-            acifrar.salir()
+        if opcion == "1":
+            juego.iniciar_juego()
+        elif opcion == "2":
+            juego.salir()
             valor=False
         else:
-            print("Opción inválida. Intenta de nuevo.")
+            print("Opción inválida. Intenta de nuevo.\n")
 
 main()
