@@ -66,4 +66,4 @@ class CifradoCesar:
     print(obtenerMensajeTraducido(modo, mensaje, clave))
 
     def salir(self):
-            print(f"\nHasta luego, {self.nombre_persona}. ¡Vuelve pronto!")
+            print(f"\nHasta luego, {self.nombre}. ¡Vuelve pronto!")
